@@ -3,11 +3,11 @@
 * Copyright (c) 2020 (jw872505975@gmail.com). All rights reserved.
 */
 
-const mongoose = require("mongoose");
+import * as mongoose from "mongoose";
 
 mongoose.connect(
-    "mongodb://127.0.0.1:3717/dy",
-    { useNewUrlParser: true }
+    "mongodb://root:jiangwei#123@127.0.0.1:4717/admin",
+    { useNewUrlParser: true, dbName:"dy" }
 ).catch(err => {
     console.log(err);
     process.exit(1);
