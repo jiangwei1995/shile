@@ -1,0 +1,3 @@
+#!/bin/bash
+export CLIENT_KEY=aw28l6cg6zzx6xgk
+export CLIENT_SECRET=8230d7fb537d35b9fb3776faa68d6703

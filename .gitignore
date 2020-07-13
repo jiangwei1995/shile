@@ -1,0 +1,9 @@
+node_modules
+.idea
+npm-debug.log
+dump.rdb
+.DS_Store
+/.project
+package-lock.json
+*.csv
+.vscode/launch.json

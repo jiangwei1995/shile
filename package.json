@@ -1,0 +1,31 @@
+{
+  "name": "shile",
+  "version": "1.0.0",
+  "description": "shile抖音数据分析",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangwei1995/shile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiangwei1995/shile/issues"
+  },
+  "homepage": "https://github.com/jiangwei1995/shile#readme",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/mongoose": "^5.7.30",
+    "body-parser": "^1.19.0",
+    "cron": "^1.8.2",
+    "douyin-sdk": "file:../../../douyin-sdk",
+    "express": "^4.17.1",
+    "ioredis": "^4.17.3",
+    "mongoose": "^5.9.22",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
