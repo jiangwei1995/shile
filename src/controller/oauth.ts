@@ -5,20 +5,23 @@
 import { Request, Response } from "express";
 import { OauthService } from "../service/oauth";
 export class OauthController {
-    static async oauth(req: Request, res: Response): Promise<void> {
-        let query: any = req.query || {};
-        console.log("controller", query);
-        try {
-            if (query.code) {
-                const data = await OauthService.oauth(query.code);
-                res.send({ data });
-                return;
-            }
-            res.send({
-                error: 0
-            });
-        } catch (error) {
-            res.send({error: error.message})
-        }
+  static async oauth(req: Request, res: Response): Promise<void> {
+    let query: any = req.query || {};
+    console.log("controller", query);
+    try {
+      if (query.code) {
+        const data = await OauthService.oauth(query.code);
+        console.log("oauth:", data);
+        res.send({
+          error: 0
+        });
+        return;
+      }
+      res.send({
+        error: 0
+      });
+    } catch (error) {
+      res.send({ error: error.message })
     }
+  }
 }
