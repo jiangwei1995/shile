@@ -6,6 +6,7 @@ import * as express from "express";
 import { OauthController } from "./controller/oauth";
 import { UserController } from "./controller/user-controller";
 import { CronController } from "./controller/cron-controller";
+import { IndexController } from "./controller";
 const bodyParser = require("body-parser");
 require("./mongo");
 require("./schedule/fans");
@@ -15,6 +16,7 @@ app.use('/oauth', OauthController.oauth);
 app.get('/users', UserController.find);
 app.post('/user', UserController.create);
 app.post('/cron', CronController.create);
+app.get('/data', IndexController.fans);
 
 app.listen(3008, () => {
     console.log("listen: 3008");
