@@ -19,10 +19,10 @@ export interface AccountDocument extends Document {
     updateTime?: string;
 }
 const AccountSchema: Schema = new Schema({
-    _user: { type: Schema.Types.ObjectId, require: true, ref: 'User' },
+    _user: { type: Schema.Types.ObjectId, require: false, ref: 'User' },
     name: { type: String, required: true },
     headImg: { type: String, required: true },
-    profileUrl: { type: String, required: true },
+    profileUrl: { type: String, required: false },
     openId: { type: String, required: true },
     followerCount: { type: Number, required: false },
     totalFavorited: { type: Number, required: false },
