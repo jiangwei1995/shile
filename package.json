@@ -21,13 +21,17 @@
     "@types/moment": "^2.13.0",
     "@types/mongoose": "^5.7.31",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "cron": "^1.8.2",
-    "douyin-sdk": "file:../../../douyin-sdk",
+    "douyin-sdk": "^1.0.3",
     "express": "^4.17.1",
     "ioredis": "^4.17.3",
     "moment": "^2.27.0",
     "mongoose": "^5.9.22",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6"
   }
 }

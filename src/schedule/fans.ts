@@ -8,13 +8,12 @@ const CronJob = require("cron").CronJob;
 import { CronService } from "../service/cron-service";
 
 const job = new CronJob(
-    "0 */1 * * * *",
+    "0 */30 * * * *",
     async function () {
         const data = await CronService.find();
         for (const cron of data) {
             await CronService.exec(cron);
         }
-        console.log(`调用完成cronJob定时任务：${moment().format("YYYY-MM-DD HH:mm:ss")}`);
     },
     null, true, "Asia/Shanghai"
 );
